@@ -1,0 +1,47 @@
+.parallax{
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	perspective: 1px;  
+	font-size: 30px;
+}
+
+.parallax-layer{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 100vh 0;
+}	
+
+
+
+.parallax-base-layer{
+	transform: translateZ(0);
+
+}
+
+.parallax-base-layer img{
+	opacity: .5;
+	width: 100%;
+}
+
+.parallax-back-layer{
+	transform: translateZ(-3px) scale(2);
+	;
+}
+
+.parallax-back-layer img{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.holder-text{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+
+}
